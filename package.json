@@ -1,0 +1,24 @@
+{
+    "name": "virtual-resume-builder",
+    "version": "1.0.0",
+    "description": "A web application for creating professional resumes",
+    "main": "index.js",
+    "scripts": {
+      "start": "cd backend && npm start",
+      "server": "cd backend && npm run server",
+      "client": "cd frontend && npm start",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
+    },
+    "keywords": [
+      "resume",
+      "builder",
+      "mern"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "concurrently": "^7.0.0"
+    }
+  }
+  
